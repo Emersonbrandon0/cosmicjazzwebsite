@@ -1,0 +1,280 @@
+.footerText{
+  text-align: right;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+.footer{
+  position: absolute;
+  width: 100%;
+  height:30px;
+  bottom: 0;
+  background-color: #131313;
+}
+.wrapper5{
+  height:40%;
+  width: 100%;
+  background: url("img/space1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  float: left;
+}
+.overlayRow{
+  margin: auto;
+  position: absolute;
+  top: 350px ;
+  padding: 40px;
+  z-index: 3;
+}
+.overlayRow .img{
+  height: 400px;
+}
+#captionArea{
+  color: white;
+  position: absolute;
+  left: 20px;
+  top:70px;  
+  width: 77%;
+  padding: 20px;
+  font-size: 175px;
+  z-index: 5;
+}
+#thirdButton{
+  padding: 14px 60px;
+}
+
+#secondButton{
+  margin-top:450px;
+  margin-left: 240px;
+  padding: 14px 60px;
+}
+
+.outerDiv {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+
+.wrapper4{
+  height:100%;
+  width: 50%;
+  background: url("img/jazz9.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  float: right;
+}
+.wrapper3{
+  height:100%;
+  width: 50%;
+  background: url("img/jazz14.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  float: left;
+}
+.wrapper2{
+  height:100%;
+  background: url("img/jazz11.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+#beginButton{
+  margin-top: 60px;
+  padding: 14px 40px;
+}
+
+.buttons, .buttons:hover, .buttons:visited {
+  margin-top: 5px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  font-style: italic;
+  font-family: 'Rajdhani', sans-serif;
+  opacity: 1 !important;
+  border-style: solid;
+  border-color: white;
+  font-weight: bold;
+}
+
+#sidebarToggler:checked ~ .sidebar{
+  transition:left .7s;
+  left:0px;
+}
+#sidebarToggler:checked ~ .toggleButton{
+  transition:left .7s;
+  left:135px;
+}
+#sidebarToggler:checked ~ .wrappers{
+  transition:margin-left .7s;
+  margin-left:170px;
+}
+#sidebarToggler:not(:checked) ~ .sidebar{
+  transition:left .7s;
+  left:-170px;
+}
+#sidebarToggler:not(:checked) ~ .toggleButton{
+  transition:left .7s;
+  left:20px;
+}
+#sidebarToggler:not(:checked) ~ .wrappers{
+  transition:margin-left .7s;
+  margin-left:0px;
+}
+
+#sidebarToggler{
+  display: none;
+}
+.sidebar{
+  position: fixed;
+  top: 0px;
+  left: -170px;
+  z-index: 1;
+  width: 170px;
+  height: 100%;
+  padding: 30px;
+  background: #333;
+}
+
+.introText{
+  font-style: italic;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Great Vibes', cursive;
+}
+.wrapper{
+  height:100%;
+  background: url("img/jazz7edited.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+body,html{
+    height:100%;
+    margin:0; padding:0;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,p{
+  text-align: center;
+  color: black;
+  padding: 0;
+  margin:0;
+  color: white;
+}
+h1{
+  font-size: 900%;
+}
+
+h3{
+  font-size: 300%;
+}
+p{
+  text-align: center;
+  font-size: 25%;
+  font-family: 'Quantico', sans-serif;
+  font-style: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow:hidden;
+}
+a,a:link{
+  color:white;
+  opacity: 0.8;
+  text-align:center;
+  text-decoration:none;
+}
+a:hover{
+  opacity: 1;
+}
+li,li:visited{
+  margin:0 auto;
+  font-size: 16px;
+  margin-bottom: 26px;
+  display:block;
+  text-transform:uppercase;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+.toggleButton, .toggleButton:hover {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 6;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+#descriptionBox{
+  background-color: #f48c42;
+  color: white;
+  position: absolute;
+  top:50px;  
+  height: auto;
+  width: 57%;
+  padding: 20px;
+  padding-left: 50px;
+  font-size: 75px;
+}
+#imageBox{
+  color: white;
+  position: absolute;
+  right: 20px;
+  top:300px;  
+  height: 88%;
+  width: 40%;
+  padding-right: 0px;
+}
+
+@media (max-width: 768px) {
+}
+
+@media only screen and (max-width : 640px) {
+
+  header {
+    position: absolute;
+  }
+
+  nav ul, nav:active ul { 
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  h1{
+    padding-top: 50px;
+    font-size: 300%;
+  }
+}
